@@ -3,9 +3,16 @@
 Et åbent, modulært sensorsystem til naturvidenskab og feltarbejde — billigt,
 fleksibelt og lavet til undervisning i biologi og naturgeografi.
 
-**Status:** Fase 1 — komponenter købes ind (november 2026).
+**Status:** Fase 1 — komponenter til **plantevægten** købes ind (november 2026).
 
-## Idéen i én figur
+## Fase 1: Plantevægten
+
+To potter på hver sin vægt — én med plante, én til kontrol — plus sensorer
+for luft, lys (PAR) og jordfugt. Vægttabet time for time viser
+fordampning og transpiration; sensorerne viser hvorfor. Data logges på
+SD-kort og vises live på smbi.dk. Se [`docs/plan.md`](docs/plan.md).
+
+## Den lange idé: målenetværk
 
 ```
  Node "Skov"      Node "Græs"     Node "Sø"
