@@ -8,7 +8,7 @@ fleksibelt og lavet til undervisning i biologi og naturgeografi.
 ## Fase 1: Plantevægten
 
 To potter på hver sin vægt — én med plante, én til kontrol — plus sensorer
-for luft, lys (PAR) og jordfugt. Vægttabet time for time viser
+for luft og jordfugt (lys, PAR, kommer til senere). Vægttabet time for time viser
 fordampning og transpiration; sensorerne viser hvorfor. Data logges på
 SD-kort og vises live på smbi.dk. Se [`docs/plan.md`](docs/plan.md).
 
@@ -30,19 +30,19 @@ SD-kort og vises live på smbi.dk. Se [`docs/plan.md`](docs/plan.md).
 * **Én ESP32 pr. målested** (ikke pr. sensor). Noderne måler, sender og sover.
 * **Centralen** sætter tidsstempler, logger alt på SD-kort, viser oversigt på
   skærmen og sender videre til en side på smbi.dk.
-* **ESP-NOW** kræver hverken router eller internet og rækker typisk 50–200 m.
-* Senere kan LoRa erstatte ESP-NOW og en Raspberry Pi blive central, uden at
+* **ESP-NOW** (radio) kræver hverken router eller internet og rækker typisk 50–200 m.
+* Senere kan LoRa (langdistanceradio) erstatte ESP-NOW (radio) og en Raspberry Pi blive central, uden at
   noderne skal laves om.
 
 ## Dokumenter
 
-* [`docs/indkob.md`](docs/indkob.md) — indkøbsliste til fase 1 (budget 2.000 kr)
+* [`docs/indkob.md`](docs/indkob.md) — slank indkøbsliste til fase 1 (ca. 800 kr, ca. 970 kr med temperaturboard, ex moms)
 * [`docs/plan.md`](docs/plan.md) — udviklingsplan og designbeslutninger
 * [`docs/vision.md`](docs/vision.md) — den lange vision for FeltSans
 
 ## Platform
 
-DFRobot **FireBeetle 2 ESP32-C6** til både central og noder: batteristik
+DFRobot **FireBeetle 2 ESP32-C6** (mikrocontroller) til både central og noder: batteristik
 (PH2.0) med lader, solcelleindgang, batterispændingsmåling og ca. 36 µA i
 dyb søvn.
 

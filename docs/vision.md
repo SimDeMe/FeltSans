@@ -63,7 +63,7 @@ livegrafer. På sigt deling af datasæt mellem elever og lærere.
 ## 6. Trådløs kommunikation og fjernmåling
 
 Fjernplacerede stationer, fx i en skov, der sender til skolen. Teknologier:
-ESP-NOW og Wi-Fi (korte afstande), LoRa (flere km uden abonnement),
+ESP-NOW (radio) og Wi-Fi (korte afstande), LoRa (langdistanceradio, flere km uden abonnement),
 mobilnet, Raspberry Pi som gateway.
 
 ```
